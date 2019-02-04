@@ -1,0 +1,717 @@
+
+@font-face{
+
+font-family: 'Algerian';
+
+src: url('../fonts/ALGER_0.TTF');
+
+font-weight: normal;
+
+
+}
+@font-face{
+
+font-family: 'Museo Sans Cyrl';
+
+src: url('../fonts/MuseoSansCyrl 300.otf');
+
+font-weight: normal;
+
+
+}
+
+.clearfix:after,
+.clearfix:before{
+	content: "";
+	display: table;
+}
+
+.clearfix:after { clear: both;}
+
+
+header {
+	background: url(../img/header_bg2.jpg) repeat-x center  ;
+	height:105px;
+}
+
+  .container {
+  	width:1180px;
+  	margin: 0 auto;
+  }
+
+  /*HEADER*/
+  .wrap {
+    position: relative;
+  	display: flex;
+  	justify-content:space-between;
+  	align-items: center;
+
+  }
+  .menu {
+  	display: flex;
+  	justify-content:space-between;
+  }
+  .menu li {
+  	margin-right: 30px;
+    
+  }
+.menu  a {
+    font: 13px ;
+    color:#322419;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    padding:10px 10px;
+    transition: 0.3s;
+}
+.menu a:hover {
+	
+	border-radius: 3px;
+	background-color: #4c2d11;
+	color: #faeae0;
+}
+.order {
+  position: relative;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+  margin-top: 5px;
+
+
+
+}
+
+
+  .carets{
+    position: relative;
+    display: inline-block;
+  	float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffdaba;
+  }
+
+  
+  .carets img {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
+  .total {
+    position: absolute;
+    top: 0px;
+    left: 37px;
+    width:17px;
+    height: 17px;
+    border-radius:50%;
+    background-color:#731c1c;
+  }
+  .total span {
+    position: absolute;
+    top:4px;
+    left: 3px;
+    font-size: 9px;
+    color:#faeae0;
+  }
+  .sum {
+
+  	margin-left: 25px;
+  	text-transform:uppercase;
+  	color:#faeae0;
+  	width:65px;
+  }
+  .sum span {
+  	font-size:17px;
+  	font-weight:700;
+  }
+  .button-order {
+
+	height: 15px; 
+  	padding: 15px 20px;
+  	border-radius: 3px;
+  	margin-left: 60px;
+     transition: 0.6s;
+
+  }
+
+  .order a {
+  	font-size: 13px;
+  	font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color:#ffede1;
+   
+
+
+}
+  
+  .order a:hover {
+  	color:#ffede1;
+  	background-color: #db3838;
+
+
+  }
+  .btn-color {
+  	background-color: #991717;
+  }
+
+   /*ORDER HOVER*/
+    .order-hover {
+      display: none;
+      position: absolute;
+      top:75px;
+      right: 0px;
+      width:370px;
+      background-color: rgba(134,86,47, 0.6);
+      z-index: 1;
+      transition: 0.6s;
+    }
+    .order:hover  .order-hover {
+    display: block;
+    transition: 0.6s;
+  }
+    .order-hover h5 {
+      padding-top: 21px;
+      padding-left: 35px;
+      padding-bottom: 21px;
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffede1;
+    }
+    .order-hover-item {
+      display: flex;
+      justify-content:space-between;
+      align-items:center;
+      border-top: 2px dotted #a68365;
+      padding-top: 20px;
+      padding-bottom: 10px;
+       transition: 0.3s;
+    }
+
+    .order-hover-item:hover {
+      background-color: rgba(120, 75,37,0.6);
+    }
+    .order-hover-img {
+      height: 47px;
+      width: 47px;
+      margin-left: 30px;
+      border-radius: 50%;
+      border: 3px solid #a1734f;
+      background-image: url(../img/burger-hover.png);
+      background-position: center;
+      background-repeat: no-repeat;
+       transition: 0.3s;
+    }
+
+    .order-hover-img:hover {
+      background-image: url(../img/delete-burger.png);
+      background-color: #ffede1;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .order-hover-name {
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffede1;
+    }
+    .order-hover-price {
+      position: relative;
+      padding-left: 5px;
+      width: 55px;
+      height: 20px;
+      background-image: url(../img/order-hover-price.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffede1;
+    }
+    .order-hover-price span {
+      font-family: 'FontAwesome', sans-serif;
+    }
+    .order-hover-price p{
+      position: absolute;
+      top:4px;
+      left: 15px;
+
+}
+
+.order-hover-amount {
+  position: relative;
+  margin-right: 50px;
+  color: #ffede1;
+}
+.order-hover-amount-number {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  border:1px solid #ffede1;
+  border-radius: 2px;
+      
+}
+.order-hover-amount-top {
+  position: absolute;
+  top: -3px;
+  left: 40px;
+  font-family: 'FontAwesome', sans-serif;
+
+}
+
+.order-hover-amount-buttom {
+  position: absolute;
+  top: 12px;
+  left: 40px;
+  font-family: 'FontAwesome', sans-serif
+}
+   /*END ORDER HOVER*/
+
+  /*END HEADER*/
+
+  /*OFFER*/
+
+  .header-title {
+  	text-align: center;
+  	color: #ffede1;
+
+  
+  }
+  .header-title h1 {
+    margin-top: 100px;
+  	font-family:'Algerian', sans-serif;
+  	font-size: 105px; 
+  }
+
+  .header-title p {
+  	margin-top: 10px;
+  	font-size: 25px;
+  	font-family: 'Museo Sans Cyrl';
+  	font-weight: 300;
+  	letter-spacing: 3pt;
+  	
+  }
+
+
+  .bottom-header-bg {
+  	background-blend-mode: multiply;
+  	height: 930px;
+  	background: url(../img/header_bottom_bg.jpg)  no-repeat center /cover;
+    background-color: rgba(0, 0, 0, 0.3);
+ }
+
+ .reception {
+ 	display: flex;
+ 	justify-content: space-between;
+  	margin-top: 100px;
+  
+
+ }
+
+ .reception-item {
+ 	position: relative;
+  	text-align: center;
+  width: 20%;
+  font-family: 'Roboto Slab', serif;
+  color:#ffede1;
+  
+ }
+ .reception-item-img {
+ 	position: relative;
+ 	width: 217px;
+  	height: 217px;
+  	background-image: url(../img/reception-bg2.png);
+  	background-repeat: no-repeat;
+  	-webkit-background-size: cover;
+  	background-size: cover;
+ }
+.reception-item img {
+  position:absolute;
+  top:38px;
+  left:38px;
+  width: 147px;
+  height: 147px;
+ 
+}
+.reception-item p {
+	margin-top: 30px;
+}
+.header-button {
+	margin-top:50px;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.menu-btn  {
+	display: inline-block;
+	padding: 30px 45px;
+	background-color:#991717;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 20px; 
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	font-weight: 300px;
+	color: #fbe8dc;
+	transition: 0.3s;
+}
+
+.menu-btn:hover {
+	background-color:#db3838;
+}
+.burger-btn{
+	margin-left: 35px;
+	display: inline-block;
+	padding: 25px 40px;
+	border-radius: 5px;
+	border:3px solid #fbe8dc;
+	text-align: center;
+	margin-top: 20px; 
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	font-weight: 300px;
+	color: #ffede1;
+	transition: 0.3s;
+}
+.burger-btn:hover {
+	background-color:#db3838;
+}
+.menu-btn span {
+	font-family: 'FontAwesome',serif;
+}
+
+/*END OFFER*/
+
+/*burgers-feature*/
+
+.burgers-feature
+ {
+ 	position: relative;
+	float:left;
+	height: 710px;
+	width: 60%;
+}
+
+.burgers-feature-bg {
+	background-image: url(../img/burgers-feature-bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.burgers-feature-wrap {
+	display: flex;
+}
+.burgers-feature-img{
+    
+	height: 710px;
+	width: 40%;
+
+}
+.burgers-feature-img img {
+	height: 710px;
+
+}
+
+
+.burgers-feature-title h2{
+  font-family: 'Roboto Slab', serif;
+  font-size: 42px;
+  font-weight: 700; 
+  color: #212121;
+  margin-top: 65px;
+  margin-bottom:70px;
+}
+
+
+.burgers-feature-title h2 span{
+  font-family: 'Algerian', serif;
+  font-weight: 300;
+}
+
+.burgers-feature-text p {
+  margin-bottom:20px;
+  font-family: 'Museo Sans Cyrl', serif;
+  font-size: 17px;
+  color: #21211c;
+  line-height: 1.4em;
+}
+
+.burgers-feature-shadow {
+	position:absolute;
+	top:180px;
+	}
+	
+/*END burgers-feature*/
+
+/*BURGERS-COOKING*/
+
+.burgers-cooking-bg {
+	background-image: url(../img/burgers-cooking-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.burgers-cooking {
+	position: relative;
+	width: 45%;
+	float: right;
+}
+.burgers-cooking-img{
+    position:relative;
+	height: 710px;
+	width: 40%;
+}
+
+.burgers-cooking-img img {
+	position: absolute;
+	top: 0px;
+	right: -100px;
+	height: 710px;
+}
+.burgers-cooking-title h2{
+  font-family: 'Roboto Slab', serif;
+  font-size: 42px;
+  font-weight: 700; 
+  color: #d2d9ee;
+  margin-top: 65px;
+  margin-bottom:70px;
+}
+
+
+.burgers-cooking-title h2 span{
+  font-family: 'Algerian', serif;
+  font-weight: 300;
+}
+
+.burgers-cooking-text p {
+  margin-bottom:20px;
+  font-family: 'Museo Sans Cyrl', serif;
+  font-size: 17px;
+  color: #d2d9ee;
+  line-height: 1.4em;
+}
+
+.burgers-cooking-shadow {
+	position:absolute;
+	top:180px;
+	}
+
+/*END BURGERS COOKING*/
+
+/*BURGERS MENU*/
+.burger-menu {
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	background-image: url(../img/burger-menu-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-box-shadow: 0px 16px 32px 4px rgba(0,0,0,0.51);
+	-moz-box-shadow: 0px 16px 32px 4px rgba(0,0,0,0.51);
+	box-shadow: 0px 16px 32px 4px rgba(0,0,0,0.51);
+}
+.burger-menu h3 {
+	padding-top:35px;
+	font-family: 'Roboto Slab', serif;
+  	font-size: 56px;
+  	font-weight: 700;
+  	text-transform:uppercase;
+  	color: #d2d9ee;
+}
+.burger-menu p {
+	margin-top: 20px;
+	font-family: 'Algerian', serif;
+  	font-size: 56px;
+  	font-weight: 700;
+  	text-transform:uppercase;
+  	color: #d2d9ee;
+}
+
+
+.burger-menu-bg {
+  background-image: url(../img/1112.png);
+  background-position: top center;
+  background-repeat: no-repeat
+}
+
+.burger-menu-item {
+ 	position:relative;
+	width:390px;
+	height: 465px;
+	cursor: pointer;
+}
+.burger-menu-item img {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    width: 355px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.3);
+}
+.burger-menu-item-bottom {
+	position: absolute;
+	top: 270px;
+	left: 18px;
+	height: 180px;
+	width: 355px;
+	background-image: url(../img/1111.png);
+  	background-position: bottom center;
+}
+.burger-menu-item-title h3 {
+	margin-top: 25px;
+	margin-left: 20px;
+	font-family: 'Roboto Slab', serif;
+  	font-size: 27px;
+  	font-weight: 700;
+  	color: #212121;
+}
+.burger-menu-item-priсe {
+	position: absolute;
+	width: 90px;
+	height: 35px;
+	top: 22px;
+	left: 250px;
+	background-image: url(../img/price-item.png);
+  	background-position: center;
+  	color: #f2f2f2;
+  	text-align: center;
+}
+.burger-menu-item-priсe p {
+	margin-top: 6px;
+	font-family: 'Roboto Slab', serif;
+  	font-size: 20px;
+  	font-weight: 700;
+}
+.burger-menu-item-priсe span {
+	font-family: 'FontAwesome', serif;
+	margin-left: 5px;
+}
+.burger-menu-item-size p {
+	font-family: 'Roboto Slab', serif;
+  	font-size: 14px;
+  	font-weight: 300;
+  	margin-top: 10px;
+  	margin-left: 20px;
+}
+.burger-menu-item-btn span {
+	font-family: 'FontAwesome', serif;
+	margin-right: 10px;
+} 
+.burger-menu-item-btn a {
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 20px;
+	padding: 15px 10px;
+	border-radius: 5px;
+	text-align: center; 
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+	font-weight: 700;
+	color: #ffede1;
+	background-color: #991717;
+	transition: 0.3s;
+}
+
+
+.burger-menu-item-btn a:hover {
+	background-color:#db3838;
+}
+
+.burger-menu-wrap {
+  	position: relative;
+  	margin-top: 100px;
+	padding-bottom: 100px;  
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	
+}
+.beer{
+	position: absolute;
+	top: 562px;
+	right: -300px;
+	height: 515px;
+	width: 420px;
+    background-image: url(../img/beer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*END BURGERS MENU*/
+/*DELIVERY*/
+.delivery-bg {
+	background-image: url(../img/delyvery-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	}
+.delivery-item-wrap {
+	display: flex;
+	justify-content: space-between;
+
+}
+.delivery-item {
+	width: 30%;
+}
+
+.delivery {
+	height: 390px;
+	color:#d2d9ee;
+	font-family: 'Roboto Slab', serif;
+
+}
+
+.delivery h3 {
+	font-size: 42px;
+	font-weight: 700;
+	padding-top:100px;
+	padding-bottom:50px;
+}
+
+.delivery-item-icon {
+	position: relative;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border: 2px dotted #df914f;
+	float: left;
+	margin-right: 20px;
+
+}
+
+.delivery-item-circle {
+	position: absolute;
+	height: 76px;
+	width: 76px;
+	top:12px;
+	left: 12px;
+	background-color: #df914f;
+	border-radius: 50%;
+
+}
+.delivery-item-icon p {
+	position: absolute;
+	top: 15px;
+	left: 19px;
+	font-family: 'FontAwesome', serif;
+	font-size: 42px;
+	color:#1b1d21;
+}
+.delivey-item-title {
+	font-family: 'FontAwesome', serif;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.delivery-item-text {
+	font-family: 'Museo Sans Cyrl', serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.2em;
+}
+
+
+/*END DELiVERY */
