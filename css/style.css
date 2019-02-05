@@ -19,6 +19,7 @@ font-weight: normal;
 
 
 }
+html { overflow-x: hidden;}
 
 .clearfix:after,
 .clearfix:before{
@@ -410,6 +411,7 @@ header {
 
 }
 .burgers-feature-img img {
+	
 	height: 710px;
 
 }
@@ -718,6 +720,7 @@ header {
 /*MAPS*/
 
 .maps {
+	margin: 0px auto;
 	height: 600px;
 }
 /*END MAPS*/
