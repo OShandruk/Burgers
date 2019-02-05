@@ -715,3 +715,119 @@ header {
 
 
 /*END DELiVERY */
+/*MAPS*/
+
+.maps {
+	height: 600px;
+}
+/*END MAPS*/
+
+	/*CLIETS REVIEWS*/
+
+.review h4 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 42px;
+	font-weight: 700;
+	color: #212121;
+}
+
+.slider {
+	position: relative;
+	margin: 0 auto;
+	width: 900px;
+	padding-bottom: 100px;
+}
+.review img {
+	margin-bottom: 40px;
+}
+.reviewer-img img{
+
+	float:left;
+	margin-right: 40px;
+
+}
+.review-text p {
+	font-family: 'Museo Sans Cyrl', serif;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 1.5em;
+}
+.reviewer-name h5 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.left-arrow {
+	top:100px;
+	left: -50px;
+	position: absolute;
+	font-family: 'FontAwesome', serif;
+	font-size: 65px;
+}
+
+.right-arrow {
+	position: absolute;
+	top:100px;
+	right: -50px;
+	font-family: 'FontAwesome', serif;
+	font-size: 65px;
+}
+
+
+.bulet-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 100px;
+	margin-top: 40px;
+}
+
+.active-bulet {
+	position: relative;
+}
+
+.active-fon {
+	position: absolute;
+	top:-5px;
+	left:-18px;
+	width: 35px;
+	height: 35px;
+	background-color: #991717;
+	border-radius: 50%;
+}
+
+.active-fon img 	 {
+	position: absolute;
+	top:9px;
+	left: 9px;
+}
+	 /*END CLIETS REVIEWS*/
+
+	 /*FOOTER*/
+	 footer {
+	 	background-image: url(../img/footer-bg.jpg);
+	 	background-position: center;
+	 	background-repeat: repeat-x;
+	 	background-size: cover;
+	 	height: 130px;
+	 	color: #d2d9ee;
+	 	font-family: 'FontAwesome', serif;
+		font-size: 13px;
+
+	 }
+
+	 .footer-wrap {
+	 	padding-top: 15px;
+	 	display: flex;
+	 	justify-content: space-between;
+	 	align-items: center;
+	 	
+	 }
+
+	 .footer-wrap a {
+	 	color: #d2d9ee;
+	 }
+
+	 /*END FOOTER*/
