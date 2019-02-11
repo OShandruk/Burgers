@@ -836,16 +836,26 @@ header {
 	 }
 
 	 /*END FOOTER*/
-	 /*ORDER FORM*/
+
+
+	 /*********************ORDER FORM*********************/
     .order-form {
-      display:flex;
-      position: relative;
-      top:100px;
-      right: 0px;
+      
+      display: none;
+      
       width:740px;
       border-radius: 5px;
       background-image: url(../img/order-form-left-bg.jpg);
-      
+      padding: 50px;
+  		position: fixed; top: 50%; left: 50%;
+  		-webkit-transform: translate(-50%, -50%);
+  		-ms-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%);
+		z-index: 101;
+    }
+
+    .order-form-wrap {
+    	display:flex;
     }
 
     .order-left {
@@ -1054,13 +1064,19 @@ header {
 	background-color: #db3838;
 }
 
-.order-form {
-	position: fixed; top: 50%; left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 
+
+body.overlay:before {
+  content: '';
+  display:block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 100;
 }
 
 
-/*END ORDER-FORM*/
+/************************END ORDER-FORM***************************/
