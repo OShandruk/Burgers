@@ -31,8 +31,11 @@ html { overflow-x: hidden;}
 
 
 header {
+  width: 100%;
 	background: url(../img/header_bg2.jpg) repeat-x center  ;
 	height:105px;
+   position: fixed;
+  z-index: 9999;
 }
 
   .container {
@@ -296,6 +299,7 @@ header {
 
 
   .bottom-header-bg {
+    padding-top: 200px;
   	background-blend-mode: multiply;
   	height: 930px;
   	background: url(../img/header_bottom_bg.jpg)  no-repeat center /cover;
@@ -840,18 +844,16 @@ header {
 
 	 /*********************ORDER FORM*********************/
     .order-form {
-      
       display: none;
-      
       width:740px;
       border-radius: 5px;
       background-image: url(../img/order-form-left-bg.jpg);
-      padding: 50px;
-  		position: fixed; top: 50%; left: 50%;
+  	  position: fixed; top: 50%; left: 50%;
   		-webkit-transform: translate(-50%, -50%);
   		-ms-transform: translate(-50%, -50%);
   		transform: translate(-50%, -50%);
-		z-index: 101;
+      z-index: 101;
+		
     }
 
     .order-form-wrap {
@@ -1066,9 +1068,9 @@ header {
 
 
 
-body.overlay:before {
+#overlay:before {
   content: '';
-  display:block;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1076,6 +1078,19 @@ body.overlay:before {
   width: 100%;
   background: rgba(0, 0, 0, .5);
   z-index: 100;
+}
+
+#overlay.new-overlay:before{
+ 
+  background: rgba(0, 0, 0, .5);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  
 }
 
 
